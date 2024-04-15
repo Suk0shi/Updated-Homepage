@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url(./assets/Fonts/Roboto-Medium.ttf);
+    font-weight: bold;
+}
+
+:root {
+    --background: rgb(11, 114, 128);
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h1,
+h2   {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+    
+}
+
+header {
+    width: 100vw;
+    background-color: var(--background);
+    padding: 50px 0;
+    display: grid;
+    justify-content: center;
+}
+
+.aboutMe {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
+}
+
+.aboutMeText {
+    padding-left: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.portraitContainer {
+    height: 250px;
+    padding: 0;
+}
+
+.portrait {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+.myName {
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+.icon {
+    height: auto;
+    width: 20px;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+}
+
+.mainSection {
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: black;
+    display: grid;
+    max-width: 900px;
+}
+
+.mainSection h1 {
+    padding: 20px 0;
+}
+
+.card {
+    padding: 8px;
+    border-style: solid;
+    border-radius: 20px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.card div {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+footer {
+    width: 100vw;
+    max-width: 100%;
+    background-color: var(--background);
+    display: grid;
+    justify-content: center;
+}
+
+.contactSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    min-width: none;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.contactSVG {
+    max-width: 500px;
+}
+
+.contactSection div {
+    justify-self: end;
+    width: 500px;
+}
+
+.contactInfo {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+
+.custom-shape-divider-top-1704216185 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1704216185 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 68px;
+}
+
+.custom-shape-divider-top-1704216185 .shape-fill {
+    fill: #0B7280;
+}
+
+.custom-shape-divider-bottom-1704216399 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704216399 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 89px;
+}
+
+.custom-shape-divider-bottom-1704216399 .shape-fill {
+    fill: #0B7280;
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactSVG {
+        width: 100%;
+    }
+    
+    .contactSection div {
+        justify-self: end;
+        width: 100%;
+    }  
+    
+    
+}
+
+@media (max-width: 600px) {
+    
+    .aboutMe {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .aboutMeText {
+        margin: 0 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contactSection {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contactSVG {
+        height: 100%;
+    }
+}
