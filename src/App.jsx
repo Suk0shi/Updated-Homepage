@@ -22,7 +22,7 @@ function App() {
     
     
     return (
-      <div className="card" scale={1.1}>
+      <Tilt className="card" scale={1.1}>
         <img src={src} alt={`screenshot of ${alt}`} />
         <div>
           <h2>{title}</h2>
@@ -30,7 +30,7 @@ function App() {
           <a href={liveLink}><svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a>
         </div>
         <p>{message}</p>
-      </div>
+      </Tilt>
     )
 
   }
