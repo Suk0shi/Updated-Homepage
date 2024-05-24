@@ -14,6 +14,7 @@ import memoryCardGameImg from './assets/Images/memoryCardGameImg.png';
 import cvMakerImg from './assets/Images/cvMakerImg.png';
 import shoppingCartImg from './assets/Images/shoppingCartImg.png';
 import membersOnlyChatImg from './assets/Images/membersOnlyChat.png';
+import sukoshibookImg from './assets/Images/sukoshibook.png';
 
 function App() {
   
@@ -56,6 +57,13 @@ function App() {
           <h1>My work</h1>
           <h2>Full Stack</h2>
           <div className="cards">
+            <Card src={sukoshibookImg} 
+              alt={"Facebook clone project"} 
+              title={`Facebook Clone`} 
+              githubLink={'https://github.com/Suk0shi/SukoshiBook_Frontend'} 
+              liveLink={"https://sukoshibook.netlify.app/"} 
+              message={`This is a Facebook clone allowing users to follow others and make posts.`}>
+            </Card>
             <Card src={messagingAppImg} 
               alt={"Messaging App project"} 
               title={`Messaging App`} 
