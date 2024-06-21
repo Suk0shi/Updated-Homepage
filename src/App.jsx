@@ -15,6 +15,7 @@ import cvMakerImg from './assets/Images/cvMakerImg.png';
 import shoppingCartImg from './assets/Images/shoppingCartImg.png';
 import membersOnlyChatImg from './assets/Images/membersOnlyChat.png';
 import sukoshibookImg from './assets/Images/sukoshibook.png';
+import translatorImg from './assets/Images/translatorImg.png';
 
 function App() {
   
@@ -108,6 +109,13 @@ function App() {
               githubLink={'https://github.com/Suk0shi/ToDoList'} 
               liveLink={"https://suk0shi.github.io/ToDoList/"} 
               message={'Create multiple locally stored todo lists.'}>
+            </Card>
+            <Card src={translatorImg} 
+              alt={"SpeechToTextToTranslate project"} 
+              title={'SpeechToTextTo Translate'} 
+              githubLink={'https://github.com/Suk0shi/SpeechToTextToTranslate'} 
+              liveLink={"https://speechtotexttranslator.netlify.app/"} 
+              message={'This was a trial to play with speech-to-text and TypeScipt. The translations use the funtranslations API.'}>
             </Card>
             <Card src={memoryCardGameImg} 
               alt={"Memory Card Game project"} 
