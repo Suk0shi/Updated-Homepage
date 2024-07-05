@@ -47,7 +47,7 @@ function App() {
             </div>
             <div className="aboutMeText">
                 <h1>About me</h1>
-                <p>I recently completed my third year studying Psychology (BSc) at the University of Southampton (UK) receiving a high 2:1 (68%) in my degree. I am currently teaching myself web development with a passion for human-computer interaction and personal development stemming from learning theory research.</p>
+                <p>After earning a high 2:1 BSc degree from the University of Southampton, the past year has been dedicated to web development, resulting in the successful creation of multiple front-end and full-stack web applications. A strong passion for learning has been crucial during this year of self-teaching.</p>
                 <a href="https://github.com/Suk0shi"><i className="devicon-github-original colored"></i></a>
                 <a href="https://www.linkedin.com/in/hugo-cordon-013841234/"><i className="devicon-linkedin-plain colored"></i></a>
             </div>
