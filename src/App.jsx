@@ -16,11 +16,12 @@ import shoppingCartImg from './assets/Images/shoppingCartImg.png';
 import membersOnlyChatImg from './assets/Images/membersOnlyChat.png';
 import sukoshibookImg from './assets/Images/sukoshibook.png';
 import translatorImg from './assets/Images/translatorImg.png';
+import tetrisImg from './assets/Images/tetrisImg.png';
 
 function App() {
   
 
-  function Card({ src, alt, title, githubLink, liveLink, message }) {
+  function Card({ src, alt, title, githubLink, liveLink, message, languages }) {
     
     
     return (
@@ -28,10 +29,11 @@ function App() {
         <img src={src} alt={`screenshot of ${alt}`} />
         <div>
           <h2>{title}</h2>
-          <a href={githubLink}><i className="devicon-github-original colored"></i></a>
-          <a href={liveLink}><svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a>
+          <a href={githubLink} target="_blank"><i className="devicon-github-original colored"></i></a>
+          <a href={liveLink} target="_blank"><svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg></a>
         </div>
         <p>{message}</p>
+        <p>{languages}</p>
       </Tilt>
     )
 
@@ -63,108 +65,131 @@ function App() {
               title={`Facebook Clone`} 
               githubLink={'https://github.com/Suk0shi/SukoshiBook_Frontend'} 
               liveLink={"https://sukoshibook.netlify.app/"} 
-              message={`This is a Facebook clone allowing users to follow others and make posts.`}>
+              message={`This is a Facebook clone allowing users to follow others and make posts.`}
+              languages={'JavaScript, React, CSS, Node.js, MongoDB, REST API'}>
             </Card>
             <Card src={messagingAppImg} 
               alt={"Messaging App project"} 
               title={`Messaging App`} 
               githubLink={'https://github.com/Suk0shi/Messaging-App-Frontend'} 
               liveLink={"https://sukoshichat.netlify.app/"} 
-              message={`A simple messaging web app allowing users to add friends and send messages.`}>
+              message={`A simple messaging web app allowing users to add friends and send messages.`}
+              languages={'JavaScript, React, CSS, Node.js, MongoDB, REST API'}>
             </Card>
             <Card src={wheresWaldoImg} 
               alt={"Where's Waldo project"} 
               title={`Where's Waldo`} 
               githubLink={'https://github.com/Suk0shi/Where-is-Waldo-photo-tagging-'} 
               liveLink={"https://whereiswald0.netlify.app"} 
-              message={`A full stack recreation of the Where's Waldo books with a leaderboard system.`}>
+              message={`A full stack recreation of the Where's Waldo books with a leaderboard system.`}
+              languages={'JavaScript, React, CSS, Node.js, MongoDB, REST API'}>
             </Card>
             <Card src={blogAPIImg} 
               alt={"Blog API project"} 
               title={`Blog API`} 
               githubLink={'https://github.com/Suk0shi/Blog-API-Posting-Frontend'} 
               liveLink={"https://blogapiposting.netlify.app"} 
-              message={`A blog application built with an Express backend and React frontend.`}>
+              message={`A blog application built with an Express backend and React frontend.`}
+              languages={'JavaScript, React, CSS, Node.js, MongoDB, REST API'}>
             </Card>
             <Card src={membersOnlyChatImg} 
               alt={"Memebers Only Chat project"} 
               title={'Members Only Chat'} 
               githubLink={'https://github.com/Suk0shi/MembersOnlyChat'} 
               liveLink={"https://membersonlychat.adaptable.app"} 
-              message={`A messageboard application to practice Express with Pug.`}>
+              message={`A messageboard application to practice Express with Pug.`}
+              languages={'JavaScript, React, CSS, Node.js, MongoDB, REST API'}>
             </Card>
           </div>
           <h2>Frontend</h2>
           <div className="cards">
+            <Card src={tetrisImg} 
+              alt={"Tetris project"} 
+              title={'Tetris'} 
+              githubLink={'https://github.com/Suk0shi/Tetris'} 
+              liveLink={"https://tetrisclassic.netlify.app/"} 
+              message={'Interactive Tetris game made with soft drop, hard drop and hold piece functionality.'}
+              languages={'TypeScript, React, CSS'}>
+            </Card>
             <Card src={battleshipImg} 
               alt={"Battleship project"} 
               title={'Battleships'} 
               githubLink={'https://github.com/Suk0shi/Battleship'} 
               liveLink={"https://suk0shi.github.io/Battleship/"} 
-              message={'The classic boardgame playable against the computer.'}>
+              message={'The classic boardgame playable against the computer.'}
+              languages={'HTML, CSS, JavaScript'}>
             </Card>
             <Card src={toDoListImg} 
               alt={"ToDoList project"} 
               title={'ToDoList'} 
               githubLink={'https://github.com/Suk0shi/ToDoList'} 
               liveLink={"https://suk0shi.github.io/ToDoList/"} 
-              message={'Create multiple locally stored todo lists.'}>
+              message={'Create multiple locally stored todo lists.'}
+              languages={'HTML, CSS, JavaScript'}>
             </Card>
             <Card src={translatorImg} 
               alt={"SpeechToTextToTranslate project"} 
               title={'SpeechToTextTo Translate'} 
               githubLink={'https://github.com/Suk0shi/SpeechToTextToTranslate'} 
               liveLink={"https://speechtotexttranslator.netlify.app/"} 
-              message={'This was a trial to play with speech-to-text and TypeScipt. The translations use the funtranslations API.'}>
+              message={'This was a trial to play with speech-to-text and TypeScipt. The translations use the funtranslations API.'}
+              languages={'TypeScript, React, CSS'}>
             </Card>
             <Card src={memoryCardGameImg} 
               alt={"Memory Card Game project"} 
               title={'Memory Card Game'} 
               githubLink={'https://github.com/Suk0shi/Memory-Card-Game'} 
               liveLink={"https://merry-hummingbird-130b80.netlify.app"} 
-              message={`A react app using random cat images from an API.`}>
+              message={`A react app using random cat images from an API.`}
+              languages={'JavaScript, React, CSS'}>
             </Card>
             <Card src={tickTackToeImg} 
               alt={"TickTackToe project"} 
               title={'TickTackToe'} 
               githubLink={'https://github.com/Suk0shi/TickTackToe'} 
               liveLink={"https://suk0shi.github.io/TickTackToe/"} 
-              message={'Play TickTackToe locally aginst a friend.'}>
+              message={'Play TickTackToe locally aginst a friend.'}
+              languages={'HTML, CSS, JavaScript'}>
             </Card>
             <Card src={knightsTravailsImg} 
               alt={"Knights-Travails project"} 
               title={'Knights-Travails'} 
               githubLink={'https://github.com/Suk0shi/Knights-Travails'} 
               liveLink={"https://suk0shi.github.io/Knights-Travails/"} 
-              message={`When input a start and end square it returns the knights route to it's destination on the chessboard via the optimal path! (To practice graphs data structure)`}>
+              message={`When input a start and end square it returns the knights route to it's destination on the chessboard via the optimal path! (To practice graphs data structure)`}
+              languages={'JavaScript'}>
             </Card>
             <Card src={signupFormImg} 
               alt={"Sign-up Form project"} 
               title={'Sign-up Form'} 
               githubLink={'https://github.com/Suk0shi/Sign-upForm'} 
               liveLink={"https://suk0shi.github.io/Sign-upForm/"} 
-              message={`Sign up form design with password match check and input validation.`}>
+              message={`Sign up form design with password match check and input validation.`}
+              languages={'HTML, CSS, JavaScript'}>
             </Card>
             <Card src={cvMakerImg} 
               alt={"CV maker project"} 
               title={'CV maker'} 
               githubLink={'https://github.com/Suk0shi/CV-Maker'} 
               liveLink={"https://legendary-gecko-f7dfeb.netlify.app"} 
-              message={`A Simple CV maker tool to practice React.`}>
+              message={`A Simple CV maker tool to practice React.`}
+              languages={'JavaScript, React, CSS'}>
             </Card>
             <Card src={shoppingCartImg} 
               alt={"Shopping Cart project"} 
               title={'Shopping Cart'} 
               githubLink={'https://github.com/Suk0shi/ShoppingCart'} 
               liveLink={"https://exquisite-biscotti-2829ee.netlify.app"} 
-              message={`The task was to create a simple store page which creates a cart of items clicked on by the user.`}>
+              message={`The task was to create a simple store page which creates a cart of items clicked on by the user.`}
+              languages={'JavaScript, React, CSS'}>
             </Card>
             <Card src={calculatorImg} 
               alt={"Calculator project"} 
               title={'Calculator'} 
               githubLink={'https://github.com/Suk0shi/calculator'} 
               liveLink={"https://suk0shi.github.io/calculator/"} 
-              message={`A working calculator.`}>
+              message={`A working calculator.`}
+              languages={'HTML, CSS, JavaScript'}>
             </Card>
           </div>
           <div className="custom-shape-divider-top-1704216185">
