@@ -98,7 +98,7 @@ function App() {
               githubLink={'https://github.com/Suk0shi/MembersOnlyChat'} 
               liveLink={"https://membersonlychat.adaptable.app"} 
               message={`A messageboard application to practice Express with Pug.`}
-              languages={'JavaScript, React, CSS, Node.js, MongoDB, REST API'}>
+              languages={'JavaScript, Express, Pug, CSS, Node.js, MongoDB'}>
             </Card>
           </div>
           <h2>Frontend</h2>
