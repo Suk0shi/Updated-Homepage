@@ -59,6 +59,7 @@ function App() {
         <div className="mainSection">
           <h1>My work</h1>
           <h2>Full Stack</h2>
+          <p>Note: The backend server is hosted on a platform with cold start times. As a result, it may take up to 50 seconds for the server to initialize after an extended period of inactivity.</p>
           <div className="cards">
             <Card src={sukoshibookImg} 
               alt={"Facebook clone project"} 
@@ -96,7 +97,7 @@ function App() {
               alt={"Memebers Only Chat project"} 
               title={'Members Only Chat'} 
               githubLink={'https://github.com/Suk0shi/MembersOnlyChat'} 
-              liveLink={"https://membersonlychat.adaptable.app"} 
+              liveLink={"https://membersonlychat.onrender.com"} 
               message={`A messageboard application to practice Express with Pug.`}
               languages={'JavaScript, Express, Pug, CSS, Node.js, MongoDB'}>
             </Card>
